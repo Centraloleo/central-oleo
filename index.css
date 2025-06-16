@@ -83,6 +83,11 @@ footer p {
   text-decoration: none;
 }
 
+.footer-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
 .footer-item img {
   width:120px; 
   height: auto;
@@ -126,3 +131,8 @@ h1, h2 {
   margin-bottom:5px;
 }
 
+.minilogo {
+    width: 24px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
