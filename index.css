@@ -108,6 +108,7 @@ p {
 footer {
   display: flex;
   justify-content: center;
+  background-color: black;
   margin-top: 40px;
 }
 
@@ -137,7 +138,7 @@ footer {
 }
 
 .footer-item img {
-  width: 120px;
+  width: 160px;
   height: auto;
   margin-top: 8px;
 }
