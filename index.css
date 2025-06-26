@@ -1,63 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: black;
   color: yellow;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  padding: 0px 50px;
 }
 
 ul {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-between;
   list-style-type: none;
   align-items: center;
   padding: 16px;
 }
 
+p {
+  font-size: 25px;
+}
+
 a {
   text-decoration: none;
   color: yellow;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #fab005;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 20px;
-  background-image: url('./img/Design-sem-nome-(6).png');
-  background-size: cover;
-  background-position: center;
-  padding: 80px 20px;
-  position: relative;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-header .center,
-header h1,
-header h2 {
-  position: relative;
-  z-index: 1;
 }
 
 header img {
@@ -66,50 +28,18 @@ header img {
   border: 5px solid yellow;
 }
 
+.center {
+  text-align: center;
+}
+
 h1, h2 {
   color: yellow;
   margin: 5px 0;
 }
 
-.vem-pra-central,
-.FAÇA-SEU-ORÇAMENTO {
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  color: yellow;
-  margin: 40px 0 20px;
-}
-
-p {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.botao-whatsapp {
-  background-color: #25D366;
-  color: white;
-  padding: 16px 32px;
-  border: none;
-  border-radius: 50px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: background 0.3s;
-}
-
-.botao-whatsapp:hover {
-  background-color: #1ebe5d;
-}
-
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  margin-top: 40px;
+  background-color: #000; /* Rodapé preto */
+  padding: 40px 0;
 }
 
 .footer-links {
@@ -127,20 +57,45 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: yellow;
-  text-align: center;
+  color: white;
   text-decoration: none;
 }
 
 .footer-item p {
   margin: 0;
   font-weight: bold;
+  color: white;
+  font-size: 18px;
 }
 
 .footer-item img {
-  width: 160px;
-  height: auto;
-  margin-top: 8px;
+  width: 80px; /* ajuste conforme necessário */
+  height: 80px;
+  margin-top: 10px;
+}
+
+.container {
+  padding: 0px 50px;
+}
+
+nav a:hover {
+  color: #fab005;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.vem-pra-central,
+.FAÇA-SEU-ORÇAMENTO {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: yellow;
+  margin-bottom: 5px;
 }
 
 .minilogo {
