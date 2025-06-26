@@ -1,115 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CENTRAL ÓLEO</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="/img/minilogo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Central Óleo</title>
+  <link rel="icon" type="image/png" href="./img/minilogo.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 40px;
+      padding: 15px 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #25D366;
+    }
+    .hero {
+      height: 100vh;
+      background: url('./img/Design-sem-nome-(6).png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    .hero-content {
+      position: relative;
+      color: white;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      padding: 15px 30px;
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #128C7E;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin: 40px 0 10px;
+      color: #333;
+      border-left: 4px solid #25D366;
+      padding-left: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .vem-pra-central {
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-top: 30px;
+      color: #25D366;
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer-item a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-item img {
+      width: 40px;
+      margin-top: 10px;
+    }
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.2rem;
+      }
+
+      .footer-links {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-<nav>
-        <ul>
-            <li>
-                <a href="index.html">Sobre Nós</a>
-            </li>            <li>
-            
-            </li>            <li>
-                <a href="contact.html">Contato</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <div class="center">
-        <img src="./img/Design sem nome (6).png">
-        </div>
-        <h1>Central Óleo</h1>
-        <h2>CENTRO AUTOMOTIVO</h2>
-    </header>
-    <main>
-        <section>
-                        <h3>⊙Nossos Serviços</h3>
-            <p>
-                Na Central Óleo, oferecemos uma linha completa de serviços automotivos com qualidade, transparência e eficiência. Nosso objetivo é garantir que seu veículo esteja sempre seguro, e com o melhor desempenho.
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Central Óleo</h1>
+      <h2>CENTRO AUTOMOTIVO</h2>
+      <a href="https://wa.me/554134016449" class="cta-button" target="_blank">Fale conosco no WhatsApp</a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h3>⊙ Nossos Serviços</h3>
+      <p>Na Central Óleo, oferecemos uma linha completa de serviços automotivos com qualidade, transparência e eficiência.</p>
+      <p>Contamos com equipe especializada, equipamentos modernos e atendimento personalizado. Confira:</p>
+      <ul>
+        <li>• Troca de óleo</li>
+        <li>• Troca de filtros (óleo, ar, combustível e cabine)</li>
+        <li>• Revisão preventiva</li>
+        <li>• Alinhamento e balanceamento</li>
+        <li>• Higienização e manutenção do ar-condicionado</li>
+        <li>• Serviços de injeção eletrônica</li>
+        <li>• E muito mais!</li>
+      </ul>
 
-Contamos com uma equipe especializada, equipamentos modernos e atendimento personalizado para cuidar do seu carro como ele merece. Confira o que podemos fazer por você:
-            </p>
-            <p>
-                <p>
-*TROCA DE ÓLEO
-                </p>
-            <p>
-*TROCA DE FILTROS (ÓLEO, AR. COMBUSTÍVEL E CABINE)
-            </p>
-        <p>
-*REVISÃO PREVENTIVA
-        </p>
-<p>
-*ALINHAMENTO E BALANCEAMENTO
-</p>
-<p>
-*HIGIENIZAÇÃO E MANUTENÇÃO DO AR-CONDICIONADO
-</p>
-<p>
-*SERVIÇOS DE INJEÇÃO ELETRÔNICA
-</p>
-<P>
-    E MUITO MAIS!
-</P>
-            </p>
-<p>
-                        <h3>⊙Nossos Objetivos</h3>
-            <p>
-                A Central Óleo é um autocenter localizado em Curitiba (PR) que traz como objetivo entregar o cuidado que todo carro merece, fundada em 2015 vem priorizando a evolução da assistência mecânica e o suporte ao cliente 
-            </p>
-                        <h3>SOBRE</h3>
-            <p>
-                EM CASO DE MAIS DÚVIDAS ESTAREMOS A DISPOSIÇÃO NAS SEGUINTES MÍDIAS DIGITAIS:
-                <P>
-*INSTAGRAM
-                </P>
-                <p>
-*FACEBOOK
-                </p>
-                <P>
-*WHATSAPP
-                </P>
-                <P>
-                Estaremos ansiosos para sanar qualquer dúvida e entregar o serviço que o seu carro merece!
-                </P>
-               </p>
-                <p class="vem-pra-central">VEM PRA CENTRAL</p>
-            </p>
-        </section>
-    </main>
-    <footer>
-  <div class="footer-links">
-    <div class="footer-item">
-      <a href="https://api.whatsapp.com/send?phone=554134016449&text=Olá+Gostaria+de+saber+mais+sobre+os+serviços!" target="_blank">
-        <p>WHATSAPP</p>
-        <img src="./img/1.png" alt="WhatsApp">
-      </a>
-    </div>
+      <h3>⊙ Nossos Objetivos</h3>
+      <p>A Central Óleo é um autocenter de Curitiba (PR), fundado em 2015. Nosso foco é a evolução da assistência mecânica e suporte ao cliente.</p>
 
-    <div class="footer-item">
-      <a href="https://www.facebook.com/profile.php?id=100063641035744" target="_blank">
-        <p>FACEBOOK</p>
-        <img src="./img/2.png" alt="Facebook">
-      </a>
-    </div>
+      <h3>⊙ Sobre</h3>
+      <p>Em caso de dúvidas, estamos disponíveis nas seguintes mídias:</p>
+      <ul>
+        <li>• Instagram</li>
+        <li>• Facebook</li>
+        <li>• WhatsApp</li>
+      </ul>
+      <p class="vem-pra-central">VEM PRA CENTRAL!</p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <div class="footer-item">
+        <a href="https://wa.me/554134016449" target="_blank">
+          <p>WHATSAPP</p>
+          <img src="./img/1.png" alt="WhatsApp">
+        </a>
+      </div>
 
-    <div class="footer-item">
-      <a href="https://www.instagram.com/centraloleo/" target="_blank">
-        <p>INSTAGRAM</p>
-        <img src="./img/3.png" alt="Instagram">
-      </a>
+      <div class="footer-item">
+        <a href="https://www.facebook.com/profile.php?id=100063641035744" target="_blank">
+          <p>FACEBOOK</p>
+          <img src="./img/2.png" alt="Facebook">
+        </a>
+      </div>
+
+      <div class="footer-item">
+        <a href="https://www.instagram.com/centraloleo/" target="_blank">
+          <p>INSTAGRAM</p>
+          <img src="./img/3.png" alt="Instagram">
+        </a>
+      </div>
     </div>
-  </div>
-        
-  </div>
-</footer>
-    </div>
+  </footer>
+
 </body>
 </html>
