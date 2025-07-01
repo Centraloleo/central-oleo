@@ -5,196 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Central Óleo</title>
   <link rel="icon" type="image/png" href="./img/minilogo.png">
+
+  <link rel="stylesheet" href="index.css" />
+
   <style>
-<style>
-  .navbar ul {
-    padding: 8px 0;
-  }
-  footer {
-    padding: 80px 40px;
-  }
-
-  /* 3. Alinhar itens do footer à esquerda */
-  .footer-links {
-    justify-content: flex-start;
-    padding-left: 40px;
-  }
-  .footer-item img {
-    width: 150px;
-    height: 150px;
-  }
-  main {
-    background-color: #333;
-    color: white;
-  }
-  .cta-button {
-    font-size: 1.2rem;
-    padding: 18px 36px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
-</style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: black;
-    }
-    .navbar {
-      background-color: rgba(0, 0, 0, 0.9);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 999;
-      padding: 8px 0; /* diminuído */
-    }
-
+    /* ESTILOS ACRESCENTADOS */
     .navbar ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 30px;
-    }
-
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.3s;
-    }
-
-    .navbar a:hover {
-      color: #dbd81d;
-    }
-
-    .hero {
-      height: 100vh;
-      background: url('./img/Design-sem-nome-(6).png') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.65);
-    }
-
-    .hero-content {
-      position: relative;
-      color: white;
-      z-index: 1;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .hero h2 {
-      font-size: 1.8rem;
-      margin-bottom: 25px;
-    }
-
-    .cta-button {
-      padding: 15px 30px;
-      background-color: #25D366;
-      color: white;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-      font-size: 1.1rem;
-    }
-
-    .cta-button:hover {
-      background-color: #1da851;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      background-color: #333;
-      color: white;
-    }
-
-    h3 {
-      font-size: 1.6rem;
-      margin: 40px 0 10px;
-      color: #dbd81d;
-      border-left: 4px solid #dbd81d;
-      padding-left: 10px;
-    }
-
-    p {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-
-    .vem-pra-central {
-      font-weight: bold;
-      font-size: 1.3rem;
-      margin-top: 30px;
-      color: #dbd81d;
+      padding: 8px 0 !important;
     }
 
     footer {
-      background-color: black;
-      color: white;
-      padding: 80px 40px; /* aumentado */
-      text-align: left; /* itens à esquerda */
+      padding: 80px 40px !important;
     }
 
     .footer-links {
-      display: flex;
-      justify-content: flex-start;
-      gap: 80px;
-      flex-wrap: wrap;
-    }
-
-    .footer-item a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+      justify-content: flex-start !important;
+      padding-left: 40px;
     }
 
     .footer-item img {
-      width: 80px; /* aumentados */
-      height: 80px;
-      margin-top: 10px;
+      width: 150px !important;
+      height: 150px !important;
     }
 
-    @media (max-width: 768px) {
-      .navbar ul {
-        flex-direction: column;
-        gap: 20px;
-      }
+    main {
+      background-color: #333 !important;
+      color: white !important;
+    }
 
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero h2 {
-        font-size: 1.2rem;
-      }
-
-      .footer-links {
-        flex-direction: column;
-      }
+    .cta-button {
+      font-size: 1.2rem !important;
+      padding: 18px 36px !important;
+      border-radius: 10px !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      background-color: #2ecc71 !important;
     }
   </style>
 </head>
+
 <body>
   <nav class="navbar">
     <ul>
@@ -203,6 +51,7 @@
       <li><a href="#">Contato</a></li>
     </ul>
   </nav>
+
   <header class="hero">
     <div class="hero-content">
       <h1>Central Óleo</h1>
@@ -210,6 +59,7 @@
       <a href="https://wa.me/554134016449" class="cta-button" target="_blank">Fale conosco no WhatsApp</a>
     </div>
   </header>
+
   <main>
     <section>
       <h3> Nossos Serviços</h3>
@@ -238,6 +88,7 @@
       <p class="vem-pra-central">VEM PRA CENTRAL!</p>
     </section>
   </main>
+
   <footer>
     <div class="footer-links">
       <div class="footer-item">
