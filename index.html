@@ -23,27 +23,28 @@
       top: 0;
       width: 100%;
       z-index: 999;
+      padding: 8px 0; /* diminuído */
     }
 
     .navbar ul {
       display: flex;
       justify-content: center;
       list-style: none;
-      gap: 40px;
-      padding: 15px 0;
+      gap: 30px;
     }
 
     .navbar a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1rem;
+      font-size: 1rem;
       transition: color 0.3s;
     }
 
     .navbar a:hover {
       color: #dbd81d;
     }
+
     .hero {
       height: 100vh;
       background: url('./img/Design-sem-nome-(6).png') center/cover no-repeat;
@@ -79,28 +80,31 @@
 
     .cta-button {
       padding: 15px 30px;
-      background-color: #25D366
-;
+      background-color: #25D366;
       color: white;
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
       transition: background-color 0.3s;
+      font-size: 1.1rem;
     }
 
     .cta-button:hover {
-      background-color: #25D366;
+      background-color: #1da851;
     }
+
     main {
       max-width: 1000px;
       margin: 0 auto;
       padding: 60px 20px;
+      background-color: #333;
+      color: white;
     }
 
     h3 {
       font-size: 1.6rem;
       margin: 40px 0 10px;
-      color: black;
+      color: #dbd81d;
       border-left: 4px solid #dbd81d;
       padding-left: 10px;
     }
@@ -116,17 +120,18 @@
       margin-top: 30px;
       color: #dbd81d;
     }
+
     footer {
       background-color: black;
       color: white;
-      padding: 40px 20px;
-      text-align: center;
+      padding: 80px 40px; /* aumentado */
+      text-align: left; /* itens à esquerda */
     }
 
     .footer-links {
       display: flex;
-      justify-content: center;
-      gap: 40px;
+      justify-content: flex-start;
+      gap: 80px;
       flex-wrap: wrap;
     }
 
@@ -137,9 +142,11 @@
     }
 
     .footer-item img {
-      width: 40px;
+      width: 80px; /* aumentados */
+      height: 80px;
       margin-top: 10px;
     }
+
     @media (max-width: 768px) {
       .navbar ul {
         flex-direction: column;
@@ -160,7 +167,6 @@
     }
   </style>
 </head>
-
 <body>
   <nav class="navbar">
     <ul>
@@ -228,6 +234,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
